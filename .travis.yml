@@ -35,7 +35,6 @@ android:
   - chmod +x gradlew
 
 script:
-  #- ./gradlew build check
   - ./gradlew clean build
   - ./gradlew test
 
