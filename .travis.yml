@@ -33,8 +33,7 @@ before_install:
   - chmod +x gradlew
 
 script:
-  - ./gradlew clean build
-  - ./gradlew test
+  - ./gradlew clean :app:build
 
 # safelist
 branches:
