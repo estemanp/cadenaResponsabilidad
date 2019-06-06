@@ -30,7 +30,6 @@ before_install:
   - cd chainofresponsabilitytraining
   - pwd
   - ls
-  - la
   - chmod +x /.gradlew
 
 script:
