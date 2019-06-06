@@ -24,6 +24,15 @@ android:
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
 
+before_install:
+  - pwd
+  - ls -la
+  - chmod +x /.gradlew
+  - cd src/client
+  - pwd
+  - ls
+  - la
+  - chmod +x /.gradlew
 
 script:
   - ./gradlew clean build
