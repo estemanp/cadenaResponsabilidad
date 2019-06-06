@@ -1,5 +1,4 @@
-# sudo: false --> run dist image in docker container on shared host for faster startup (runs slower)
-# sudo: required --> run dist image in VM on Google Compute Engine for slower startup (runs faster)
+--- !miprimeryml
 language: android
 dist: trusty
 jdk: oraclejdk8
@@ -13,7 +12,7 @@ android:
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
   components:
-     - tools
+    - tools
     - platform-tools
     # The BuildTools version used by your project
     - build-tools-$ANDROID_BUILD_TOOLS_VERSION
@@ -35,4 +34,4 @@ script:
 # safelist
 branches:
   only:
-  - develop
+    - develop
