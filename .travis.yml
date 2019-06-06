@@ -27,7 +27,6 @@ android:
 before_install:
   - pwd
   - ls -la
-  - chmod +x /.gradlew
   - cd chainofresponsabilitytraining
   - pwd
   - ls
